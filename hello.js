@@ -138,7 +138,7 @@
 // }
 // console.log(s1)
 
-// YANG INI BELOM !
+
 // let kata = 'The greatest victory is that which requires no battle';
 // let temp = "";
 // let result = "";
@@ -146,48 +146,82 @@
 
 // for(let i = kata.length - 1; i >= 0;i--){
     // console.log(kata[i])
-    // for(let j = temp.length - 1; j >= 0;j--){
-    //     if (kata[i - 1] === " " && !flag) {
-    //         result += temp
-    //         temp =""
-    //         flag = true
-    //     }
-    //     if(temp[j] == " " && flag){
-    //         result += temp
-    //         temp =""
-    //     }
-    //     if(i == 0){
-    //         result += temp
-    //         temp =""
-    //     }
-    // }
-    
-//     temp = kata[i] + temp
-//     if (kata[i-1] === " " && !flag) {
-//         result += temp;
-//         temp = "";
-//         flag = true;
-//     }
-//     if (kata[i] === " " && flag) {
-//         if (temp !== " ") {
-//             result += temp;
-//         }
-//         temp = "";
-//     }
+    // temp = kata[i] + temp
+    // console.log(temp)
+        // if (kata[i - 1] === " ") {
+        //     result += temp
+        //     temp =""
+        // }
+        // else if (kata[i] === " "){
+        //     result += temp
+        //     temp =""
+        // }
+        // if(i == 0){
+        //     result += temp
+        //     temp =""
+        // }
 
-//     if (i === 0) {
-//         result += " " + temp;
-//         temp = "";
-//     }
+        // if (kata[i - 1] === " " && !flag) {
+        //     result += temp
+        //     temp =""
+        //     flag = true
+        // }
+        // if(temp[j] == " " && flag){
+        //     result += temp
+        //     temp =""
+        // }
+        // if(i == 0){
+        //     result += " " + temp
+        //     temp =""
+        // }
+    
+    
+
+    // if (kata[i-1] === " " && !flag) {
+    //     result += temp;
+    //     temp = "";
+    //     flag = true;
+    // }
+    // if (kata[i] === " " && flag) {
+    //     if (temp !== " ") {
+    //         result += temp;
+    //     }
+    //     temp = "";
+    // }
+
+    // if (i === 0) {
+    //     result += " " + temp;
+    //     temp = "";
+    // }
 // }
 // console.log(result)
 
 // let jmlAngkot = 10
 
 // for(let i = 1; i <= jmlAngkot; i++){
-//     if(i <= 6){
+//     if(i <= 6 && i !== 5){
 //         console.log("No." + i + " Angkot Bener")
-//     }else{
+//     }else if(i == 8 || i == 10 || i == 5){
+//         console.log("No." + i + " Angkot Lembur")
+//     }
+//     else{
 //         console.log("No." + i + " Angkot Rusak")
 //     }
 // }
+
+
+arr = [
+    'Steinbacher', 'African',
+    'Mallard',     'Pilgrim',
+    'Crested',     'African',
+    'Pilgrim',     'Pilgrim',
+    'Pilgrim',     'African',
+    'Toulouse',    'Pilgrim',
+    'Toulouse',    'Pilgrim'
+  ]
+
+  function gooseFilter (birds) {
+    var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+    console.log(birds)
+    // return an array containing all of the strings in the input array except those that match strings in geese
+  };
